@@ -28,10 +28,10 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null:false|
+|name|string|null:false|
 ###  association
-- has_many :text
 - has_many :group_users
+- has_many :groups, through: :groups_users
 
 ##  textテーブル
 |Column|Type|Options|
@@ -40,18 +40,17 @@ Things you may want to cover:
 |text|text||
 |user_id|integer|null: false, forrign_key: true|
 ###  association
-- belongs_to :user
-- has_many : group
+- belongs_to : user
+- belongs_to : group
 
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group|text|null; false|
-|user_id|integer|null: false,  foreign_key: true|
+|group|string|null; false|
 
 ##  association
-- belongs_to :text
 - has_many : groups_users
+- has_many : users, through: :groups_users
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -60,5 +59,5 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 
 ###  Association
--belongs_to :group
--belongs_to :user
+- belongs_to :group
+- belongs_to :user
