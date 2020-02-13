@@ -33,12 +33,14 @@ Things you may want to cover:
 - has_many :group_users
 - has_many :groups, through: :groups_users
 
-##  textテーブル
+##  messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|text||
 |text|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
 ###  association
 - belongs_to : user
 - belongs_to : group
@@ -46,7 +48,7 @@ Things you may want to cover:
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group|string|null; false|
+|name|string|null; false|
 
 ##  association
 - has_many : groups_users
