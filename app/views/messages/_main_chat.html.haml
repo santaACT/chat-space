@@ -1,0 +1,41 @@
+.chat-main
+ .group-main
+  .header
+   .header__title
+    <p>title</p>
+   .header__member
+    <p>member</p>
+  .group-main__edit-btn
+   %a{ :href => '#', :id =>'#'}
+    edit
+   
+ 
+ .message-list
+  .message-text
+   .message-text__info
+    .message-text__info__name
+     <p>masa</p>
+    .message-text__info__time
+     <p>2019/02/19</p>
+   .message-text__comment
+    <p>Hallo!!</p>
+
+  .message-text
+   .message-text__info
+    .message-text__info__name
+     <p>masa</p>
+    .message-text__info__time
+     <p>2019/02/19</p>
+   .message-text__comment
+    <p>Hallo!!</p>
+
+ .message-form
+  .message-input
+   .message-input__text
+    <p>type a message</p>
+    .message-input__mask
+     %label{class: "message-input__mask__image"}
+      = icon('fa', 'image')
+      %input{type: "file", class: "hideen", style: "display: none"}
+   .message-input__submit
+    <p>send</p>
