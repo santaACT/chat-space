@@ -1,0 +1,41 @@
+.chat-main
+ .group-main
+  .header
+   .header__title
+    %p title
+   .header__member
+    %p member
+  .group-main__edit-btn
+   = link_to '#' do
+    edit
+   
+ 
+ .message-list
+  .message-text
+   .message-text__info
+    .message-text__info__name
+     %p masa
+    .message-text__info__time
+     %p 2019/02/19
+   .message-text__comment
+    %p Hallo!!
+
+  .message-text
+   .message-text__info
+    .message-text__info__name
+     %p masa
+    .message-text__info__time
+     %p 2019/02/19
+   .message-text__comment
+    %p Hallo!!
+
+ .message-form
+  .message-input
+   .message-input__text
+    %p type a message
+    .message-input__mask
+     %label{class: "message-input__mask__image"}
+      = icon('fa', 'image')
+      %input{type: "file", class: "hideen", style: "display: none"}
+   .message-input__submit
+    send
