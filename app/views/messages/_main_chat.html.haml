@@ -9,8 +9,7 @@
      -@group.group_users.each do |group_user|
       =group_user.user.name
   .group-main__edit-btn
-   = link_to '#' do
-    edit
+   = link_to "Edit", edit_group_path(params[:group_id]), method: :get
    
  
  .message-list
