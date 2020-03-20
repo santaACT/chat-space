@@ -1,4 +1,4 @@
-.message
+.message{data: {message: {id: message.id}}}
  .message-text
   .message-text__info
    .message-text__info__name
@@ -9,4 +9,4 @@
   - if message.content.present?
    %p.lower-message__coment
     = message.content
-  = image_tag message.image.url, class: '#' if message.image.present?
+  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
