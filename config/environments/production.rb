@@ -1,5 +1,4 @@
 Rails.application.configure do
-  server '18.180.81.179', user: 'ec2-user', roles: %w{app db web}
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
