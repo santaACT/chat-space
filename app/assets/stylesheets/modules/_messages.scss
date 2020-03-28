@@ -131,7 +131,7 @@ float:  left;
     padding:   35px 0 46px 40px;
     overflow: scroll;
     .message-text{
-      padding-bottom: 40px;
+      padding-bottom: 5px;
       &__info{
         display: flex;
         margin-bottom: 12px;
@@ -152,6 +152,7 @@ float:  left;
      .lower-message{
       color:   #434a54;
       font-size: $bassFontsize - 2px;
+      padding-bottom: 30px;
     }
   }
 
