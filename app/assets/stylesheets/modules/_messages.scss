@@ -161,6 +161,8 @@ float:  left;
     padding: 20px 40px;
     position:    fixed;
     width: calc(100vw - 300px);
+    position: absolute;
+    bottom: 0;
     .message-input{
       height:  50px;
       display: flex;
